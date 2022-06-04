@@ -219,7 +219,15 @@ const ContactSection = styled.section`
 
       form {
         .contact__form-inputs {
-          gap: 1.2rem;
+          gap: 2rem;
+        }
+
+        .buttons {
+          button {
+            font-size: 1rem;
+            margin-top: 0.5rem;
+            padding:  0.6rem 1.2rem;
+          }
         }
       }
     }

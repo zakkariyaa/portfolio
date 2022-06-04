@@ -37,7 +37,7 @@ const HeaderSection = styled.header`
 
     .btn {
       font-size: 1rem;
-      margin-top: 1rem;
+      margin: 1rem 0;
       background: #1d3557;
       color: #bde0fe;
       display: inline-block;

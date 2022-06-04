@@ -8,7 +8,7 @@ import { BiComment } from 'react-icons/bi'
 import { VscOutput } from 'react-icons/vsc'
 
 const BottomMenu = () => {
-  const [active, setActive] = useState('')
+  const [active, setActive] = useState('header')
 
   return (
     <Menu>
