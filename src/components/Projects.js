@@ -1,15 +1,22 @@
-import React from 'react'
+import React, { useState } from 'react'
 import styled from 'styled-components'
 
-import Img1 from '../assets/project4.png'
-import Img2 from '../assets/project2.png'
-import Img3 from '../assets/project3.png'
-import Img4 from '../assets/project1.png'
-import Img5 from '../assets/project6.png'
-import Img6 from '../assets/project8.png'
+import Img1 from '../assets/gif.png'
+import Img2 from '../assets/murti.png'
+import Img3 from '../assets/tesla.png'
+import Img4 from '../assets/tenzies.png'
+import Img5 from '../assets/audio.png'
+import Img6 from '../assets/portfolio-html.png'
+import Img7 from '../assets/restuarent.png'
+import Img8 from '../assets/portfolio-react.png'
+import Img9 from '../assets/salon.png'
 
 
 const Projects = () => {
+  const [moreProjects, setMoreProjects] = useState(false)
+
+  const handleMoreProjects = () => setMoreProjects(prevValue => !prevValue)
+
   return (
     <ProjectsSection>
       <p className='border-top'></p>
@@ -80,15 +87,54 @@ const Projects = () => {
             </div>
             <h3>Personal Portfolio</h3>
             <div className='portfolio__item-cta'>
-              <a className='btn' href="google.com">Github</a>
-              <a className='btn btn-primary' href="google.com">Live Demo</a>
+              <a className='btn' href="https://github.com/zakkariyaa/responsive-portfolio">Github</a>
+              <a className='btn btn-primary' href="https://zakariya.me/responsive-portfolio/">Live Demo</a>
             </div>
           </article>
+
+          {moreProjects &&
+            <article className="portfolio__item">
+              <div className="portfolio__item-image">
+                <img src={Img7} alt="project one" />
+              </div>
+              <h3>Restuarent Website</h3>
+              <div className='portfolio__item-cta'>
+                <a className='btn' href="https://github.com/zakkariyaa">Github</a>
+                <a className='btn btn-primary' href="https://github.com/zakkariyaa">Live Demo</a>
+              </div>
+            </article>
+          }
+
+          {moreProjects &&
+            <article className="portfolio__item">
+              <div className="portfolio__item-image">
+                <img src={Img8} alt="project one" />
+              </div>
+              <h3>Current Portfolio (React)</h3>
+              <div className='portfolio__item-cta'>
+                <a className='btn' href="https://github.com/zakkariyaa/zakkariyaa.github.io">Github</a>
+                <a className='btn btn-primary' href="https://zakariya.me/">Live Demo</a>
+              </div>
+            </article>
+          }
+
+          {moreProjects &&
+            <article className="portfolio__item">
+              <div className="portfolio__item-image">
+                <img src={Img9} alt="project one" />
+              </div>
+              <h3>Modern Salon Website</h3>
+              <div className='portfolio__item-cta'>
+                <a className='btn' href="https://github.com/zakkariyaa">Github</a>
+                <a className='btn btn-primary' href="https://github.com/zakkariyaa">Live Demo</a>
+              </div>
+            </article>
+          }
 
         </div>
 
         <div className='view_more'>
-          <button>View More</button>
+          <button onClick={handleMoreProjects}>{moreProjects ? 'View Less' : 'View More'}</button>
         </div>
       </div>
     </ProjectsSection>
