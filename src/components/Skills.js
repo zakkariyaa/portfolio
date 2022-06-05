@@ -78,6 +78,10 @@ const SkillsSection = styled.section`
       max-width: 88%;
       div {
         grid-template-columns: repeat(3, 1fr);
+        font-size: 2rem;
+        p {
+          padding: 0.7rem 1.6rem;
+        }
       }
     }
   }

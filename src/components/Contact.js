@@ -211,15 +211,21 @@ const ContactSection = styled.section`
   }
 
   @media screen and (max-width: 600px) {
-    max-width: 100%;
     .contact__container {
-      max-width: 95%;
       padding: 1rem;
-      height: 30rem;
+      height: 70vh;
 
       form {
+        justify-content: space-between;
+        gap: 0;
+        margin: 0;
         .contact__form-inputs {
-          gap: 2rem;
+          display: flex;
+          flex-direction: column;
+          gap: 0;
+          > * {
+            margin-bottom: 2rem;
+          }
         }
 
         .buttons {

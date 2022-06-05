@@ -143,19 +143,23 @@ const AboutSection = styled.section`
           }
 
           .btn {
-            width: 12rem;
+            width: 13rem;
           }
         }
       }
       .about_socials {
+        justify-content: space-around;
         margin-top: 6rem;
+        ::after, ::before {
+          width: 3rem;
+        }
       }
     }
   }
 
   @media screen and (max-width: 600px) {
     max-width: 100%;
-    margin-top: 0;
+    margin-top: 4rem;
     .container {
       max-width: 95%;
       font-size: 1rem;
@@ -180,7 +184,10 @@ const AboutSection = styled.section`
       }
 
       .about_socials {
-        gap: 1.5rem;
+        justify-content: space-around;
+        a {
+          font-size: 1.5rem;
+        }
         ::after, ::before {
           width: 2rem;
         }

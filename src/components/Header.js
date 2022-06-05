@@ -37,7 +37,7 @@ const HeaderSection = styled.header`
 
     .btn {
       font-size: 1rem;
-      margin: 1rem 0;
+      margin-top: 1rem;
       background: #1d3557;
       color: #bde0fe;
       display: inline-block;
@@ -80,7 +80,7 @@ const HeaderSection = styled.header`
       }
 
       img {
-        width: 80%;
+        width: 70%;
       }
     }
   }
@@ -90,6 +90,7 @@ const HeaderSection = styled.header`
     .container {
       max-width: 95%;
       height: 68vh;
+      gap: 2rem;
       .header-info {
         margin-top: 4rem;
         font-size: 1.2rem;
