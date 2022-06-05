@@ -1,22 +1,25 @@
 {
   "files": {
     "main.css": "/static/css/main.81fe1f4f.css",
-    "main.js": "/static/js/main.3b893221.js",
-    "static/media/project3.png": "/static/media/project3.d1cef0217392ee18599e.png",
+    "main.js": "/static/js/main.9b7eae38.js",
+    "static/media/tesla.png": "/static/media/tesla.d1cef0217392ee18599e.png",
     "static/media/coding-gif.gif": "/static/media/coding-gif.bb40340f165929162262.gif",
     "static/media/developer.gif": "/static/media/developer.7d2ce4351be1c5bdf9e8.gif",
-    "static/media/project8.png": "/static/media/project8.b66ba0d1c08d189ec03d.png",
-    "static/media/project2.png": "/static/media/project2.f08349e65dc10e688b67.png",
+    "static/media/salon.png": "/static/media/salon.8cdf95190e05dba74f24.png",
+    "static/media/restuarent.png": "/static/media/restuarent.561b79eef601c3e0c834.png",
+    "static/media/portfolio-html.png": "/static/media/portfolio-html.b66ba0d1c08d189ec03d.png",
+    "static/media/portfolio-react.png": "/static/media/portfolio-react.3d507580876cde33aa29.png",
+    "static/media/murti.png": "/static/media/murti.f08349e65dc10e688b67.png",
     "static/media/contact2.png": "/static/media/contact2.e1ac660460cd8c65a7b5.png",
-    "static/media/project4.png": "/static/media/project4.32b64c442d7a34fb8ae5.png",
-    "static/media/project6.png": "/static/media/project6.94e3726c9f1108d1187d.png",
-    "static/media/project1.png": "/static/media/project1.991f1410dc5bc6c8775d.png",
+    "static/media/gif.png": "/static/media/gif.32b64c442d7a34fb8ae5.png",
+    "static/media/audio.png": "/static/media/audio.94e3726c9f1108d1187d.png",
+    "static/media/tenzies.png": "/static/media/tenzies.991f1410dc5bc6c8775d.png",
     "index.html": "/index.html",
     "main.81fe1f4f.css.map": "/static/css/main.81fe1f4f.css.map",
-    "main.3b893221.js.map": "/static/js/main.3b893221.js.map"
+    "main.9b7eae38.js.map": "/static/js/main.9b7eae38.js.map"
   },
   "entrypoints": [
     "static/css/main.81fe1f4f.css",
-    "static/js/main.3b893221.js"
+    "static/js/main.9b7eae38.js"
   ]
 }
