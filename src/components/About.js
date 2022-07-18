@@ -15,12 +15,12 @@ const About = () => {
         <div className='info'>
           <img src={Developer} alt="" />
           <div className='about_details'>
-            <p>My name is <strong>Zakarie Yaris</strong>, i am 24 years old Software Engineer from London.
+            <p>My name is <strong>Zakarie Yaris</strong>, i am a Software Engineer from London.
               My background is in Medicine but i have been coding for over year now.
               So you can say i enjoy fixing computer bugs more than human ones!
             </p>
             <p>Main two languages i use daily and love are <strong>Javascript</strong> and
-              <strong> Python</strong>. Lately, i mostly build Fullstack web applications using
+              <strong> Python</strong>. Lately, i mostly build Fullstack web and mobile applications using
               Javascript based stack.
             </p>
             <a href='#projects' className='btn'>Check Portfolio</a>

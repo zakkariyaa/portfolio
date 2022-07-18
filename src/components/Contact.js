@@ -21,9 +21,8 @@ const Contact = () => {
           </div>
           <h2>Contact Us</h2>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo,
-            doloribus voluptatibus inventore repudiandae praesentium nobis
-            expedita excepturi, fugit, provident qui aperiam dignissimos
+            To get in contact for professional work, project collaboration or just to say hi, please fill
+            the form or shoot me quick email and i will get back to you as soon as possible.
           </p>
           <ul class="contact__details">
             <li>
@@ -130,8 +129,8 @@ const ContactSection = styled.section`
         a {
           background: #424890;
           color: white;
-          padding: 0.5rem;
-          border-radius: 50%;
+          padding: 0.4rem;
+          border-radius: 100%;
           font-size: 1.5rem;
           transition: all 400ms ease;
           :hover {
