@@ -1,70 +1,36 @@
-# Getting Started with Create React App
+# Portfolio Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Tenzies Dice game project made with Reactjs [Project website](https://tenzidice.netlify.app/).
 
-## Available Scripts
+<img src="https://github.com/zakkariyaa/zakkariyaa.github.io/blob/master/src/assets/portfolio-react.png?raw=true" alt="Portfolio" height="522px" width="100%" />
 
-In the project directory, you can run:
+<br />
+<br />
+<h2>How it's made:</h2>
+<p><b>Tech used:</b> React, styled-components, react-nanoid, react-confetti</p>
+<p>It is a simple application by nature but it requires state management and synchorinzation
+<br>which mad reactjs the prefect choice. Also, i got to practice my react skills on the way.</p>
 
-### `npm start`
+<br />
+<br />
+<h2>Optimatizations:</h2>
+<p><i>(Optional)</i></p>
+<p>Add a rolls section that displays how many times user has rolled the dice.
+<br>Make it interesting by  adding a maximum rolls per game. Like game levels,
+<br>allow the user to choose how challenging they want to play.</p>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+<p>Make it multiplayer? We can use libraries like Socket.io to acheive this.</p>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+<br />
+<br />
+<h2>Lessons Learned:</h2>
+<p>The biggest lesson from this project was how React is an absolute delight when it comes
+<br>to state management. It makes it easy to sync every part of the project.</p>
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<br />
+<br />
+<h2>Other Projects:</h2>
+<p>A poetry reading website made with Reactjs https://github.com/zakkariyaa/suugaan .</p>
+<p>Fruit shop https://github.com/zakkariyaa/fruit-shop</p>
+<p>Video to gif converter website made with Reactjs & Nodejs https://github.com/zakkariyaa/gif-maker .</p>
+<p>A tribute webpage to Carl Sagan https://github.com/zakkariyaa/tribute-page .</p>
