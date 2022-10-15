@@ -1,31 +1,27 @@
 # Portfolio Website
 
-Tenzies Dice game project made with Reactjs [Project website](https://tenzidice.netlify.app/).
+My own portfolio website made from scratch with Reactjs [Project website](https://tenzidice.netlify.app/).
 
 <img src="https://github.com/zakkariyaa/zakkariyaa.github.io/blob/master/src/assets/portfolio-react.png?raw=true" alt="Portfolio" height="522px" width="100%" />
 
 <br />
 <br />
 <h2>How it's made:</h2>
-<p><b>Tech used:</b> React, styled-components, react-nanoid, react-confetti</p>
-<p>It is a simple application by nature but it requires state management and synchorinzation
-<br>which mad reactjs the prefect choice. Also, i got to practice my react skills on the way.</p>
+<p><b>Tech used:</b> React, React Hooks, React icons, styled-components</p>
+<p>A minimalistic yet beutiful and fully responsive portfolio website.
+<br>Consists a gallery to display my other projects</p>
 
 <br />
 <br />
 <h2>Optimatizations:</h2>
 <p><i>(Optional)</i></p>
-<p>Add a rolls section that displays how many times user has rolled the dice.
-<br>Make it interesting by  adding a maximum rolls per game. Like game levels,
-<br>allow the user to choose how challenging they want to play.</p>
-
-<p>Make it multiplayer? We can use libraries like Socket.io to acheive this.</p>
+<p>Add a dark mode/light mode feature using useContext hook.</p>
 
 <br />
 <br />
 <h2>Lessons Learned:</h2>
-<p>The biggest lesson from this project was how React is an absolute delight when it comes
-<br>to state management. It makes it easy to sync every part of the project.</p>
+<p>How to plan and organize your React applications. Use of common
+<br>react patterns to divide the application into manageable chunks</p>
 
 <br />
 <br />
