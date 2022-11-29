@@ -1,50 +1,73 @@
-import React from 'react'
-import styled from 'styled-components'
-import { AiFillLinkedin, AiFillGithub, AiOutlineTwitter, AiOutlineInstagram } from 'react-icons/ai'
+import React from 'react';
+import styled from 'styled-components';
+import {
+  AiFillLinkedin,
+  AiFillGithub,
+  AiOutlineTwitter,
+  AiOutlineInstagram,
+} from 'react-icons/ai';
 
-import Developer from '../assets/developer.gif'
+import coderImg from '../assets/coder.png';
 
-const About = () => {
+const About = ({ isDarkMode }) => {
   return (
-    <AboutSection>
-      <p className='border-top' id='about'></p>
-      <div className='container'>
+    <AboutSection isDarkMode={isDarkMode}>
+      <p className="border-top" id="about"></p>
+      <div className="container">
         <small>A little</small>
         <h2>About Me</h2>
 
-        <div className='info'>
-          <img src={Developer} alt="" />
-          <div className='about_details'>
-            <p>My name is <strong>Zakarie Yaris</strong>, i am a Software Engineer from London.
-              My background is in Medicine but i have been coding for over year now.
-              So you can say i enjoy fixing computer bugs more than human ones!
+        <div className="info">
+          <img src={coderImg} alt="drawing of a programmer" />
+          <div className="about_details">
+            <p>
+              My name is <strong>Zakarie Yaris</strong>, i am a Software
+              Engineer from London. My background is in Medicine but i have been
+              coding for over year now. So you can say i enjoy fixing computer
+              bugs more than human ones!
             </p>
-            <p>Main two languages i use daily and love are <strong>Javascript</strong> and
-              <strong> Python</strong>. Lately, i mostly build Fullstack web and mobile applications using
-              Javascript based stack.
+            <p>
+              Main two languages i use daily and love are{' '}
+              <strong>Javascript</strong> and
+              <strong> Python</strong>. Lately, i mostly build Fullstack web and
+              mobile applications using Javascript based stack.
             </p>
-            <a href='#projects' className='btn'>Check Portfolio</a>
-            <a href='#contact' className='btn'>Request CV</a>
+            <a href="#projects" className="btn">
+              Check Portfolio
+            </a>
+            <a href="#contact" className="btn">
+              Request CV
+            </a>
           </div>
         </div>
 
-        <div className='about_socials'>
-          <a href="https://www.linkedin.com/in/zakarie-yaris/"><AiFillLinkedin /></a>
-          <a href="https://github.com/zakkariyaa"><AiFillGithub /></a>
-          <a href="https://twitter.com/zakaariyee"><AiOutlineTwitter /></a>
-          <a href="https://www.instagram.com/?hl=en"><AiOutlineInstagram /></a>
+        <div className="about_socials">
+          <a href="https://www.linkedin.com/in/zakarie-yaris/">
+            <AiFillLinkedin />
+          </a>
+          <a href="https://github.com/zakkariyaa">
+            <AiFillGithub />
+          </a>
+          <a href="https://twitter.com/zakaariyee">
+            <AiOutlineTwitter />
+          </a>
+          <a href="https://www.instagram.com/?hl=en">
+            <AiOutlineInstagram />
+          </a>
         </div>
       </div>
     </AboutSection>
-  )
-}
+  );
+};
 
 const AboutSection = styled.section`
-  margin-top: 2rem;
+  padding-top: 2rem;
+  background-color: ${({ isDarkMode }) => (isDarkMode ? '#1d3557' : '#edf2f4')};
+  color: ${({ isDarkMode }) => (isDarkMode ? '#edf2f4' : '#1d3557')};
   .border-top {
     text-align: center;
     width: 60%;
-    border: 1px solid gray;
+    border: 1px solid #219ebc;
     margin: 1rem auto;
   }
   .container {
@@ -53,32 +76,34 @@ const AboutSection = styled.section`
     small {
       display: block;
       text-align: center;
-      color: #03045e;
-      font-size: 1.2rem;
+      color: ${({ isDarkMode }) => (isDarkMode ? '#edf2f4' : '#03045e')};
+      font-size: 1rem;
     }
     h2 {
       text-align: center;
-      font-size: 2rem;
-      color: #457b9d;
+      font-size: 1.7rem;
+      color: ${({ isDarkMode }) => (isDarkMode ? '#edf6f9' : '#457b9d')};
     }
 
     .info {
       display: flex;
-      gap: 4rem;
+      gap: 5rem;
       align-items: center;
       p {
-        font-size: 1.4rem;
+        font-size: 1.1rem;
         line-height: 1.9;
         width: 100%;
+      }
+      p + p {
         margin-top: 2rem;
       }
       .btn {
-        font-size: 1.2rem;
+        font-size: 1rem;
         margin-top: 1.5rem;
-        background: #1d3557;
-        color: #bde0fe;
+        background: #2a9d8f;
+        color: #edf2f4;
         display: inline-block;
-        padding: 0.8rem 1.6rem;
+        padding: 0.5rem 1.1rem;
         margin-right: 0.6rem;
         width: fit-content;
         border: 1px solid transparent;
@@ -87,15 +112,15 @@ const AboutSection = styled.section`
         border-radius: 0.4rem;
         :hover {
           background: transparent;
-          color: #1d3557;
-          border-color: #1d3557;
+          color: ${({ isDarkMode }) => (isDarkMode ? '#edf2f4' : '#1d3557')};
+          border-color: #2a9d8f;
         }
       }
 
       .btn + .btn {
-        color: #219ebc;
+        color: ${({ isDarkMode }) => (isDarkMode ? '#edf2f4' : '#219ebc')};
         background: transparent;
-        border: 1px solid #023047;
+        border: 1px solid #2a9d8f;
       }
     }
 
@@ -106,23 +131,25 @@ const AboutSection = styled.section`
       justify-content: center;
       align-items: center;
       a {
-        font-size: 1.7rem;
-        color: #457b9d;
+        font-size: 1.5rem;
+        color: ${({ isDarkMode }) => (isDarkMode ? '#edf6f9' : '#457b9d')};
         :hover {
-          color: black;
+          color: ${({ isDarkMode }) => (isDarkMode ? '#caf0f8' : '#000')};
         }
       }
-      ::after, ::before {
+      ::after,
+      ::before {
         content: '';
         width: 6rem;
         height: 2px;
-        background: #1d3557;
+        background: ${({ isDarkMode }) => (isDarkMode ? '#edf2f4' : '#1d3557')};
       }
     }
   }
 
   @media screen and (max-width: 1024px) {
     .border-top {
+      width: 40%;
       margin-top: 0;
     }
     .container {
@@ -148,9 +175,11 @@ const AboutSection = styled.section`
         }
       }
       .about_socials {
-        justify-content: space-around;
+        justify-content: center;
+        gap: 3rem;
         margin-top: 6rem;
-        ::after, ::before {
+        ::after,
+        ::before {
           width: 3rem;
         }
       }
@@ -158,42 +187,46 @@ const AboutSection = styled.section`
   }
 
   @media screen and (max-width: 600px) {
-    max-width: 100%;
-    margin-top: 4rem;
+    width: 100%;
+    padding-top: 4rem;
     .container {
-      max-width: 95%;
+      margin-top: 0;
+      width: 100%;
       font-size: 1rem;
       small {
-        font-size: 0.9rem;
+        font-size: 0.8rem;
       }
       h2 {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
       }
       .info {
         .about_details {
+          padding: 0 1rem;
           p {
-            width: 88%;
+            width: 100%;
             font-size: 1rem;
           }
           .btn {
             font-size: 1rem;
-            padding: 0.4rem 1rem;
-            width: 10rem;
+            padding: 0.3rem 0.6rem;
+            width: 9rem;
           }
         }
       }
 
       .about_socials {
-        justify-content: space-around;
+        justify-content: center;
+        gap: 1rem;
         a {
           font-size: 1.5rem;
         }
-        ::after, ::before {
+        ::after,
+        ::before {
           width: 2rem;
         }
       }
     }
   }
-`
+`;
 
-export default About
+export default About;

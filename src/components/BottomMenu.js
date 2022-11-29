@@ -1,17 +1,17 @@
-import React, { useState } from 'react'
-import styled from 'styled-components'
+import React, { useState } from 'react';
+import styled from 'styled-components';
 
-import { AiFillHome } from 'react-icons/ai'
-import { FaUserAlt } from 'react-icons/fa'
-import { BiCodeAlt } from 'react-icons/bi'
-import { BiComment } from 'react-icons/bi'
-import { VscOutput } from 'react-icons/vsc'
+import { AiFillHome } from 'react-icons/ai';
+import { FaUserAlt } from 'react-icons/fa';
+import { BiCodeAlt } from 'react-icons/bi';
+import { BiComment } from 'react-icons/bi';
+import { VscOutput } from 'react-icons/vsc';
 
-const BottomMenu = () => {
-  const [active, setActive] = useState('header')
+const BottomMenu = ({ isDarkMode }) => {
+  const [active, setActive] = useState('header');
 
   return (
-    <Menu>
+    <Menu isDarkMode={isDarkMode}>
       <a href="#about" onClick={() => setActive('about')}>
         <FaUserAlt className={active === 'about' ? 'active' : ''} />
       </a>
@@ -28,16 +28,18 @@ const BottomMenu = () => {
         <BiComment className={active === 'contact' ? 'active' : ''} />
       </a>
     </Menu>
-  )
-}
+  );
+};
 
 const Menu = styled.section`
+  background-color: ${({ isDarkMode }) => (isDarkMode ? '#14253d' : '#edf2f4')};
+  color: ${({ isDarkMode }) => (isDarkMode ? '#edf2f4' : '#14253d')};
+
   display: flex;
   justify-content: space-around;
   align-items: center;
   gap: 1rem;
   padding: 2rem;
-  background-color: aliceblue;
   box-shadow: 1.5rem 0.5rem 1.5rem 0.5rem rgba(36, 0, 64, 0.2);
   position: fixed;
   bottom: 0;
@@ -45,7 +47,7 @@ const Menu = styled.section`
   right: 0;
   * {
     font-size: 2rem;
-    color: #1d3557;
+    color: ${({ isDarkMode }) => (isDarkMode ? '#edf2f4' : '#14253d')};
   }
 
   display: none;
@@ -62,11 +64,11 @@ const Menu = styled.section`
     .active {
       border-radius: 50%;
       padding: 0.5rem;
-      background-color: white;
+      background-color: ${({ isDarkMode }) =>
+        isDarkMode ? '#4a5d79' : '#bde0fe'};
       font-size: 2.6rem;
-      color: #2d4cc8;
     }
   }
-`
+`;
 
-export default BottomMenu
+export default BottomMenu;

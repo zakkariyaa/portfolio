@@ -1,51 +1,58 @@
-import React from 'react'
-import styled from 'styled-components'
+import styled from 'styled-components';
+import { BsSun, BsMoon } from 'react-icons/bs';
 
-const Navbar = () => {
+const Navbar = ({ isDarkMode, setIsDarkMode }) => {
+  const darkMode = () => {
+    setIsDarkMode((prevState) => !prevState);
+  };
+
   return (
-    <Nav>
-      <div className='container'>
+    <Nav isDarkMode={isDarkMode}>
+      <div className="container">
         <h2>Zakarie</h2>
-        <div className='right_navbar'>
-          <a href="#header">Home</a>
-          <a href="#about">About</a>
+        <button onClick={darkMode}>
+          {isDarkMode ? <BsSun /> : <BsMoon />}
+        </button>
+        <div className="right_navbar">
+          <a href="#projects">Home</a>
           <a href="#projects">Projects</a>
-          <a href="#contact">Contacts</a>
+          <a href="#contact">Contact</a>
         </div>
       </div>
     </Nav>
-  )
-}
+  );
+};
 
 const Nav = styled.nav`
-  border-radius: 0 0 2rem 2rem;
-  background-color: #edf2f4;
+  background-color: ${({ isDarkMode }) => (isDarkMode ? '#1d3557' : '#edf2f4')};
+  color: ${({ isDarkMode }) => (isDarkMode ? '#edf2f4' : '#1d3557')};
   font-weight: 500;
-  color: #1d3557;
-  box-shadow: 0 1.5rem 1.5rem rgba(36, 0, 64, 0.2);
+
   .container {
-    font-size: 1.3rem;
     width: 80%;
     height: 5rem;
-    margin:  auto;
+    margin: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
 
     h2 {
+      font-size: 1.9rem;
       font-family: 'Philosopher', sans-serif;
     }
 
     .right_navbar {
       display: flex;
-      gap: 1rem;
+      gap: 1.6rem;
       a {
+        font-size: 1.1rem;
         position: relative;
         color: inherit;
         ::after {
           content: '';
           height: 2px;
-          background-color: black;
+          background-color: ${({ isDarkMode }) =>
+            isDarkMode ? '#edf2f4' : '#1d3557'};
           position: absolute;
           left: 0;
           right: 0;
@@ -63,11 +70,22 @@ const Nav = styled.nav`
         }
       }
     }
+
+    button {
+      background-color: ${({ isDarkMode }) =>
+        isDarkMode ? '#1d3557' : '#edf2f4'};
+    }
+
+    button > * {
+      cursor: pointer;
+      font-size: 1.3rem;
+      color: ${({ isDarkMode }) => (isDarkMode ? '#edf2f4' : '#1d3557')};
+    }
   }
 
   @media screen and (max-width: 1024px) {
-    border-radius: 0;
     .container {
+      border: none;
       width: 88%;
       margin: 0;
       h2 {
@@ -77,9 +95,17 @@ const Nav = styled.nav`
   }
 
   @media screen and (max-width: 600px) {
-    max-width: 0;
-    display: none;
+    .container {
+      justify-content: center;
+      width: 100%;
+      h2 {
+        display: none;
+      }
+      .right_navbar {
+        display: none;
+      }
+    }
   }
-`
+`;
 
-export default Navbar
+export default Navbar;
