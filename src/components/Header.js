@@ -10,10 +10,11 @@ const Header = ({ isDarkMode }) => {
           <p>Hello there! I'm</p>
           <p className="name">Zakarie</p>
           <p>
-            Welcome to my portfolio website. I am a fullstack engineer Lorem
-            ipsum dolor sit amet consectetur adipisicing elit. Placeat, eius.
-            Lorem ipsum dolor sit amet consectetur.
+            A fullstack web developer who focuses on writing clean, elegant, and
+            effeicient code. Love <span>HTML5</span>, <span>CSS3</span>,
+            <span> Javascript</span>, and <span>React</span>.
           </p>
+          <p>Welcome to my little corner on the internet!</p>
           <a href="#contact" className="btn">
             Hire Me
           </a>
@@ -37,6 +38,13 @@ const HeaderSection = styled.header`
     align-items: center;
     .header-info {
       font-size: 1.1rem;
+      p:nth-child(3) {
+        margin-bottom: 1rem;
+      }
+      p span {
+        font-style: italic;
+        color: ${({ isDarkMode }) => (isDarkMode ? '#ffb703' : '#e63946')};
+      }
       .name {
         font-size: 3rem;
         color: ${({ isDarkMode }) => (isDarkMode ? '#48cae4' : '#023e8a')};
