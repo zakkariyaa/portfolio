@@ -1,20 +1,25 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
 
-import Img1 from '../assets/gif.png';
-import Img2 from '../assets/murti.png';
-import Img3 from '../assets/tesla.png';
-import Img4 from '../assets/tenzies.png';
-import Img5 from '../assets/audio.png';
-import Img6 from '../assets/portfolio-html.png';
-import Img7 from '../assets/restuarent.png';
-import Img8 from '../assets/portfolio-react.png';
-import Img9 from '../assets/salon.png';
+import projectsInfo from './projectsInfo';
+import PortfolioItem from './PortfolioItem';
 
 const Projects = ({ isDarkMode }) => {
   const [moreProjects, setMoreProjects] = useState(false);
 
   const handleMoreProjects = () => setMoreProjects((prevValue) => !prevValue);
+
+  const portfolioItems = projectsInfo.map((el, idx) => {
+    return (
+      <PortfolioItem
+        key={idx}
+        title={el['title']}
+        img={el['img']}
+        githubLink={el['githubLink']}
+        liveLink={el['liveLink']}
+      />
+    );
+  });
 
   return (
     <ProjectsSection isDarkMode={isDarkMode}>
@@ -24,182 +29,7 @@ const Projects = ({ isDarkMode }) => {
         <h2>Projects</h2>
 
         <div className="projects_conatiner">
-          <article className="portfolio__item">
-            <div className="portfolio__item-image">
-              <img src={Img1} alt="project one" />
-            </div>
-            <h3>Gif Maker</h3>
-            <div className="portfolio__item-cta">
-              <a className="btn" href="https://github.com/zakkariyaa/gif-maker">
-                Github
-              </a>
-              <a
-                className="btn btn-primary"
-                href="https://gifyvideo.netlify.app/"
-              >
-                Live Demo
-              </a>
-            </div>
-          </article>
-
-          <article className="portfolio__item">
-            <div className="portfolio__item-image">
-              <img src={Img2} alt="project one" />
-            </div>
-            <h3>Somali Poetry</h3>
-            <div className="portfolio__item-cta">
-              <a className="btn" href="https://github.com/zakkariyaa/suugaan">
-                Github
-              </a>
-              <a className="btn btn-primary" href="https://murti.netlify.app/">
-                Live Demo
-              </a>
-            </div>
-          </article>
-
-          <article className="portfolio__item">
-            <div className="portfolio__item-image">
-              <img src={Img3} alt="project one" />
-            </div>
-            <h3>Tesla Clone</h3>
-            <div className="portfolio__item-cta">
-              <a
-                className="btn"
-                href="https://github.com/zakkariyaa/tesla-clone"
-              >
-                Github
-              </a>
-              <a
-                className="btn btn-primary"
-                href="https://app-tesla-clone.netlify.app/"
-              >
-                Live Demo
-              </a>
-            </div>
-          </article>
-
-          <article className="portfolio__item">
-            <div className="portfolio__item-image">
-              <img src={Img4} alt="project one" />
-            </div>
-            <h3>Tenzies Game</h3>
-            <div className="portfolio__item-cta">
-              <a
-                className="btn"
-                href="https://github.com/zakkariyaa/tenzies-game"
-              >
-                Github
-              </a>
-              <a
-                className="btn btn-primary"
-                href="https://tenzies-dice.netlify.app/"
-              >
-                Live Demo
-              </a>
-            </div>
-          </article>
-
-          <article className="portfolio__item">
-            <div className="portfolio__item-image">
-              <img src={Img5} alt="project one" />
-            </div>
-            <h3>Video to Audio Converter</h3>
-            <div className="portfolio__item-cta">
-              <a
-                className="btn"
-                href="https://github.com/zakkariyaa/video-converter"
-              >
-                Github
-              </a>
-              <a
-                className="btn btn-primary"
-                href="https://video-converterr.netlify.app/"
-              >
-                Live Demo
-              </a>
-            </div>
-          </article>
-
-          <article className="portfolio__item">
-            <div className="portfolio__item-image">
-              <img src={Img6} alt="project one" />
-            </div>
-            <h3>Personal Portfolio</h3>
-            <div className="portfolio__item-cta">
-              <a
-                className="btn"
-                href="https://github.com/zakkariyaa/responsive-portfolio"
-              >
-                Github
-              </a>
-              <a
-                className="btn btn-primary"
-                href="https://zakariya.me/responsive-portfolio/"
-              >
-                Live Demo
-              </a>
-            </div>
-          </article>
-
-          {moreProjects && (
-            <article className="portfolio__item">
-              <div className="portfolio__item-image">
-                <img src={Img7} alt="project one" />
-              </div>
-              <h3>Restuarent Website</h3>
-              <div className="portfolio__item-cta">
-                <a className="btn" href="https://github.com/zakkariyaa">
-                  Github
-                </a>
-                <a
-                  className="btn btn-primary"
-                  href="https://github.com/zakkariyaa"
-                >
-                  Live Demo
-                </a>
-              </div>
-            </article>
-          )}
-
-          {moreProjects && (
-            <article className="portfolio__item">
-              <div className="portfolio__item-image">
-                <img src={Img8} alt="project one" />
-              </div>
-              <h3>Current Portfolio (React)</h3>
-              <div className="portfolio__item-cta">
-                <a
-                  className="btn"
-                  href="https://github.com/zakkariyaa/zakkariyaa.github.io"
-                >
-                  Github
-                </a>
-                <a className="btn btn-primary" href="https://zakariya.me/">
-                  Live Demo
-                </a>
-              </div>
-            </article>
-          )}
-
-          {moreProjects && (
-            <article className="portfolio__item">
-              <div className="portfolio__item-image">
-                <img src={Img9} alt="project one" />
-              </div>
-              <h3>Modern Salon Website</h3>
-              <div className="portfolio__item-cta">
-                <a className="btn" href="https://github.com/zakkariyaa">
-                  Github
-                </a>
-                <a
-                  className="btn btn-primary"
-                  href="https://github.com/zakkariyaa"
-                >
-                  Live Demo
-                </a>
-              </div>
-            </article>
-          )}
+          {moreProjects ? portfolioItems : portfolioItems.splice(0, 9)}
         </div>
 
         <div className="view_more">

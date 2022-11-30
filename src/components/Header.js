@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import laptopImg from '../assets/laptop.png';
+
+import contactImg from '../assets/contact.png';
 
 const Header = ({ isDarkMode }) => {
   return (
@@ -19,7 +20,7 @@ const Header = ({ isDarkMode }) => {
             Hire Me
           </a>
         </div>
-        <img src={laptopImg} alt="coding gif" />
+        <img src={contactImg} alt="coding gif" />
       </div>
     </HeaderSection>
   );
