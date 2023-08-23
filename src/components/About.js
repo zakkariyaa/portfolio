@@ -27,7 +27,7 @@ const About = ({ isDarkMode }) => {
               bugs more than human ones!
             </p>
             <p>
-              Main two languages i use daily and love are{' '}
+              Main two languages i use daily and love are
               <strong>Javascript</strong> and
               <strong> Python</strong>. Lately, i mostly build Fullstack web and
               mobile applications using Javascript based stack.
