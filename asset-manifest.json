@@ -1,30 +1,13 @@
 {
   "files": {
-    "main.css": "/static/css/main.81fe1f4f.css",
-    "main.js": "/static/js/main.2790dc54.js",
-    "static/media/tesla.png": "/static/media/tesla.d1cef0217392ee18599e.png",
-    "static/media/hiil.png": "/static/media/hiil.e437492cf81d3f341f47.png",
-    "static/media/tribute.png": "/static/media/tribute.f14d77445b93efb26ae4.png",
-    "static/media/website.png": "/static/media/website.5c277b682c9509c046e7.png",
-    "static/media/portfolio-html.png": "/static/media/portfolio-html.b66ba0d1c08d189ec03d.png",
-    "static/media/fruit.png": "/static/media/fruit.29a3a4f7a1e6e5393a5b.png",
-    "static/media/murti.png": "/static/media/murti.f08349e65dc10e688b67.png",
-    "static/media/movie.png": "/static/media/movie.02990b1820ac1687afcb.png",
-    "static/media/hayaan1.png": "/static/media/hayaan1.88cd4d439d4a76f2e74c.png",
-    "static/media/contact2.png": "/static/media/contact2.e1ac660460cd8c65a7b5.png",
-    "static/media/coder.png": "/static/media/coder.8f506db9e69940a60b34.png",
-    "static/media/portfolio-react.png": "/static/media/portfolio-react.dee8592f4e6706ca6396.png",
-    "static/media/password.png": "/static/media/password.3d85c6c4c26f71e968e3.png",
-    "static/media/gif.png": "/static/media/gif.32b64c442d7a34fb8ae5.png",
-    "static/media/audio.png": "/static/media/audio.94e3726c9f1108d1187d.png",
-    "static/media/tenzies.png": "/static/media/tenzies.991f1410dc5bc6c8775d.png",
-    "static/media/contact.png": "/static/media/contact.026ad3ec5a2f76f98866.png",
+    "main.css": "/static/css/main.5cd533a2.css",
+    "main.js": "/static/js/main.144e10d0.js",
     "index.html": "/index.html",
-    "main.81fe1f4f.css.map": "/static/css/main.81fe1f4f.css.map",
-    "main.2790dc54.js.map": "/static/js/main.2790dc54.js.map"
+    "main.5cd533a2.css.map": "/static/css/main.5cd533a2.css.map",
+    "main.144e10d0.js.map": "/static/js/main.144e10d0.js.map"
   },
   "entrypoints": [
-    "static/css/main.81fe1f4f.css",
-    "static/js/main.2790dc54.js"
+    "static/css/main.5cd533a2.css",
+    "static/js/main.144e10d0.js"
   ]
 }
